@@ -1,7 +1,7 @@
-﻿**Aperion AI: FlashCost Agent (Local Mirror)** \\
-**Document Version:** 1.0 \\
-**Principal Lead:** Abhishek Prakash \\
-**Project: ** FlashCost Manufacturing Cost Estimation Agent \\
+﻿**Aperion AI: FlashCost Agent (Local Mirror)** \
+**Document Version:** 1.0 \
+**Principal Lead:** Abhishek Prakash \
+**Project: ** FlashCost Manufacturing Cost Estimation Agent \
 **Executive Summary**
 This repository serves as the architectural blueprint and local implementation for the FlashCost Agent. It bridges the gap between the initial CNN model development (V1–V3) and the current modular Reasoning Engine, which uses vector-based retrieval of historical evidence to justify cost predictions.
 ________________
