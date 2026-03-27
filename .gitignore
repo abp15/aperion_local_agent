@@ -1,0 +1,18 @@
+# Large Docker images
+*.tar
+
+# Python environment and cache
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# Data and Indexes (If they are large)
+*.index
+id_mapping.json
+
+# macOS noise
+.DS_Store
+
+cnn_service/my_model/variables/
+vector_service/data/vector_search_index_data.json
