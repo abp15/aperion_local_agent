@@ -1,4 +1,4 @@
-﻿📘 Aperion AI: FlashCost Agent (Local Mirror)
+﻿Aperion AI: FlashCost Agent (Local Mirror)
 Document Version: 1.0
 Principal Lead: Abhishek Prakash
 Project: FlashCost Manufacturing Cost Estimation Agent
@@ -6,8 +6,7 @@ Project: FlashCost Manufacturing Cost Estimation Agent
 This repository serves as the architectural blueprint and local implementation for the FlashCost Agent. It bridges the gap between the initial CNN model development (V1–V3) and the current modular Reasoning Engine, which utilizes vector-based historical evidence retrieval to justify cost predictions.
 ________________
 
-
-⚠️ Action Required: Hand-off Artifacts
+Action Required: Hand-off Artifacts
 Due to GitHub’s 100MB file size limit, the following heavy artifacts are excluded from this repository. You must download them from
 https://github.com/abp15/aperion_local_agent/releases/tag/v1.0.0-local-mirror 
 and place them in the following paths:
@@ -69,28 +68,3 @@ The Reasoning Engine that provides "Evidence" for every prediction.
 ________________
 
 
-💡 Principal’s Cheat Sheet: The "V3" Success Matrix
-Barrier
-	The V3 & Agent Solution
-	Payload Size Limit
-	Switched from Raw Pixels to Base64 Strings.
-	"Unknown Format" Error
-	Added tf.io.decode_base64 to internal model graph.
-	Training Pathing Crash
-	Used tf.strings.join for Tensor-compatible paths.
-	Evidence Gap
-	Integrated Vector Search to show 5 "Matches" alongside prediction.
-	Endpoint Sync
-	Used sync=True in deployment to ensure the "Swap" completed.
-	________________
-
-
-🧹 Maintenance
-To keep costs lean, use the following logic to clean up stale resources:
-Python
-# Cleanup stale endpoints
-for model in endpoint.list_models():
-    endpoint.undeploy(model)
-
-
-________________
