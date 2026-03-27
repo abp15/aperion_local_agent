@@ -1,12 +1,12 @@
-﻿Aperion AI: FlashCost Agent (Local Mirror)
-Document Version: 1.0
-Principal Lead: Abhishek Prakash
-Project: FlashCost Manufacturing Cost Estimation Agent
-🌐 Executive Summary
-This repository serves as the architectural blueprint and local implementation for the FlashCost Agent. It bridges the gap between the initial CNN model development (V1–V3) and the current modular Reasoning Engine, which utilizes vector-based historical evidence retrieval to justify cost predictions.
+﻿**Aperion AI: FlashCost Agent (Local Mirror)**
+**Document Version:** 1.0
+**Principal Lead:** Abhishek Prakash
+**Project: ** FlashCost Manufacturing Cost Estimation Agent
+**Executive Summary**
+This repository serves as the architectural blueprint and local implementation for the FlashCost Agent. It bridges the gap between the initial CNN model development (V1–V3) and the current modular Reasoning Engine, which uses vector-based retrieval of historical evidence to justify cost predictions.
 ________________
 
-Action Required: Hand-off Artifacts
+**Action Required: Hand-off Artifacts**
 Due to GitHub’s 100MB file size limit, the following heavy artifacts are excluded from this repository. You must download them from
 https://github.com/abp15/aperion_local_agent/releases/tag/v1.0.0-local-mirror 
 and place them in the following paths:
@@ -28,7 +28,7 @@ Artifact
 	________________
 
 
-🚀 Quick Start Instructions
+**Quick Start Instructions**
 Load Docker Containers:
 Bash
 docker load -i cnn_image.tar
@@ -44,8 +44,7 @@ pip install -r requirements.txt
 streamlit run app.py
    4. ________________
 
-
-🧠 Part I: The CNN Development Playbook (V1–V3)
+**Part I: The CNN Development Playbook (V1–V3)**
 Lessons learned while building the "Brain" (Cost Prediction Model).
 1. Data & GCS Strategy
    * Goal: Generate representative datasets of sketches and manufacturing costs.
@@ -58,7 +57,7 @@ Lessons learned while building the "Brain" (Cost Prediction Model).
 ________________
 
 
-🛠️ Part II: FlashCost Agent (Modular Architecture)
+**Part II: FlashCost Agent (Modular Architecture)**
 The Reasoning Engine that provides "Evidence" for every prediction.
    1. Input Orchestration: Handles ingestion of sketches and returns raw image bytes as a unified input for CNN and Vector Search.
    2. Manufacturing Cost Prediction: Bypasses the 1.5MB JSON payload limit by sending images as URL-safe Base64 strings.
