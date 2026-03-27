@@ -8,7 +8,9 @@ ________________
 
 
 ⚠️ Action Required: Hand-off Artifacts
-Due to GitHub’s 100MB file size limit, the following heavy artifacts are excluded from this repository. You must download them from the provided Aperion Cloud Storage/Drive link and place them in the following paths:
+Due to GitHub’s 100MB file size limit, the following heavy artifacts are excluded from this repository. You must download them from
+https://github.com/abp15/aperion_local_agent/releases/tag/v1.0.0-local-mirror 
+and place them in the following paths:
 Artifact
 	Type
 	Destination Path
